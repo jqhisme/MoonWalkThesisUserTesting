@@ -1,3 +1,27 @@
+html {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(128, 128, 128, 0.4) transparent;
+}
+
+/* Fallback for browsers using WebKit scrollbar styling */
+html::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: rgba(128, 128, 128, 0.4);
+  border-radius: 999px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: rgba(128, 128, 128, 0.7);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -190,6 +214,7 @@ body {
     opacity: 0;
     transition: opacity 1s ease;
 }
+
 
 #preview-image.active {
     opacity: 1;
